@@ -1,0 +1,52 @@
+.footer {
+  background: #000;
+}
+.footer-conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 120px 20px 60px;
+  color: #fff;
+  margin: 0px auto;
+  gap: 100px;
+  position: relative;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato li {
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-contato a {
+  color: #fff;
+}
+
+.rodape {
+  font-size: 1.125rem;
+  color: #cccccc;
+}
+
+.footer-conteiner::before {
+  content: "";
+  width: 128px;
+  height: 128px;
+  background: url("../img/detalheh.svg") no-repeat center;
+  position: absolute;
+  top: -64px;
+}
+
+@media (max-width: 800px) {
+  .footer-conteiner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
